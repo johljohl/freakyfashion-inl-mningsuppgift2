@@ -99,59 +99,54 @@ h1 {
   width: 100%;
   height: auto;
 }
-@media (max-width: 575px) {
+@media all and (max-width: 1179px) {
   .site-header > div,
   ul {
     flex-direction: column;
   }
 }
-@media (max-width: 575px) {
+@media all and (max-width: 1179px) {
   .site-header ul {
     font-size: 20px;
     display: flex;
     flex-direction: column;
   }
 }
-@media (max-width: 575px) {
+@media all and (max-width: 1179px) {
   .site-header .iconBox {
     font-size: 3em;
     margin-left: 140px;
   }
 }
-@media (max-width: 575px) {
+@media all and (max-width: 1179px) {
   .hero {
     flex-direction: column-reverse;
   }
 }
-@media (max-width: 575px) {
+@media all and (max-width: 1179px) {
   .hero p {
     font-size: 15px;
     padding: 0;
   }
 }
-@media (max-width: 575px) {
+@media all and (max-width: 1179px) {
   .btn {
     width: 350px;
   }
 }
-@media (max-width: 576px) {
+@media all and (max-width: 1179px) {
   .spots {
     display: none;
   }
 }
-@media (max-width: 576px) {
+@media all and (max-width: 1179px) {
   .spots {
     display: none;
   }
 }
-@media (max-width: 576px) {
-  .products  {
+@media all and (max-width: 1179px) {
+  .products {
     grid-template-columns: auto;
     grid-template-rows: auto;
-    
-    
   }
 }
-
-
-
