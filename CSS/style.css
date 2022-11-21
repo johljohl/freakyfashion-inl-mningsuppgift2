@@ -1,0 +1,128 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 60px;
+  background: linear-gradient(white, grey);
+}
+h2 {
+  text-align: center;
+  padding-bottom: 60px;
+  text-transform: capitalize;
+}
+
+table {
+  width: 100%;
+
+  margin: auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+th {
+  background-color: grey;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  text-transform: capitalize;
+}
+.tableRow1 td {
+  height: 30px;
+  background-color: lightgray;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  text-transform: capitalize;
+}
+.tableRow2 td {
+  height: 30px;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  text-transform: capitalize;
+}
+.tableRow3 td {
+  height: 140px;
+  text-align: right;
+  text-transform: capitalize;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.forname,
+.lastname,
+.email {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+.forname input[type="text"] {
+  width: 250px;
+  border: 3px solid black;
+}
+.lastname {
+  padding-left: 40px;
+}
+.lastname input[type="text"] {
+  width: 250px;
+  border: 3px solid black;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  margin-bottom: 13px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.email input[type="email"] {
+  width: 545px;
+  border: 3px solid black;
+}
+
+.street,
+.postNumber,
+.city {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+select {
+  width: 250px;
+  border: 3px solid black;
+}
+option {
+  text-transform: capitalize;
+}
+.postNumber input[type="number"] {
+  width: 250px;
+  border: 3px solid black;
+}
+.street input[type="text"] {
+  width: 350px;
+  border: 3px solid black;
+}
+fieldset {
+  border: 3px solid black;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+}
+legend {
+  font-weight: bold;
+}
+.payMent input [type="radio"] {
+  text-transform: capitalize;
+}
+.btn input[type="submit"] {
+  display: block;
+  border: 2px solid black;
+  box-shadow: 5px 5px 3px black;
+  text-align: center;
+  padding: 4px;
+  width: 180px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}

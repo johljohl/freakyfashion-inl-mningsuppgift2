@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <form action="/action_page.php" method="get" id="form1">
+      <h2>kassan</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>produkt</th>
+            <th>pris</th>
+            <th>antal</th>
+            <th>belopp</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="tableRow1">
+            <td>svart t-shirt</td>
+            <td>199</td>
+            <td>2</td>
+            <td>498 kr</td>
+          </tr>
+          <tr class="tableRow2">
+            <td>epic hoodie</td>
+            <td>499</td>
+            <td>1</td>
+            <td>499 kr</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="tableRow3">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>total: 897 kr</td>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="container">
+        <div class="name">
+          <div class="forname">
+            <label for="fname">namn</label>
+            <input type="text" id="fname" name="fname" required />
+          </div>
+          <div class="lastname">
+            <label for="lname">efternamn</label>
+            <input type="text" id="lname" name="lname" required />
+          </div>
+        </div>
+        <div class="email">
+          <label for="email">epost</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <fieldset>
+          <legend>adress</legend>
+          <div class="street">
+            <label for="street">gata</label>
+            <input type="text" id="street" required />
+          </div>
+          <div class="postNumber">
+            <label for="postNumber">postnummer</label>
+            <input type="number" id="postNumber" required />
+          </div>
+          <div class="city">
+            <label for="city">stad</label>
+            <select name="city" id="city">
+              <option selected disabled hidden>&nbsp;</option>
+              <option value="stockholm">stockholm</option>
+              <option value="goteborg">göteborg</option>
+              <option value="malmo">malmö</option>
+              <option value="uppsala">uppsala</option>
+              <option value="linkoping">linköping</option>
+              <option value="helsingborg">helsingborg</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset class="payment">
+          <legend>betalningsalternativ</legend>
+          <div>
+            <input type="radio" id="klarna" name="payment" value="klarna" />
+            <label for="klarna">klarna</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="creditCard"
+              name="payment"
+              value="creditCard"
+            />
+            <label for="creditCard">kreditkort</label>
+          </div>
+          <div>
+            <input type="radio" id="swish" name="payment" value="swish" />
+            <label for="swish">swish</label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="btn">
+        <button>Köp nu</button>
+      </div>
+    </form>
+  </body>
+</html>

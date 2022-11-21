@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px;
+}
+header {
+  background: linear-gradient(grey, white);
+}
+.site-header > div {
+  display: flex;
+  flex-direction: column;
+}
+.site-header > div img {
+  width: 100%;
+}
+.site-header > :nth-child(2) {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  font-size: 1em;
+  width: 90%;
+}
+.site-header input:focus {
+  outline: none;
+}
+.site-header input {
+  border: none;
+  width: 90%;
+}
+.site-header form {
+  border: 2px solid black;
+  border-radius: 16px;
+  padding: 8px;
+  background-color: white;
+}
+.site-header .iconBox {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  align-items: center;
+  gap: 150px;
+  padding: 20px;
+}
+.site-header .iconBox a {
+  font-size: 60px;
+  color: black;
+}
+.site-header ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 50px;
+  list-style: none;
+}
+.site-header > nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.site-header > nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.hero h1 {
+  font-size: 30px;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.hero p {
+  padding-bottom: 50px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+  box-shadow: 5px 5px 8px black;
+}
+.btn {
+  display: block;
+  border: 2px solid black;
+  box-shadow: 5px 5px 3px black;
+  text-align: center;
+  padding: 15px;
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+.spots {
+  display: none;
+  justify-content: space-around;
+  padding: 40px;
+}
+.spots img {
+  width: 350px;
+  height: 200px;
+  border-radius: 40px;
+  box-shadow: 0 0 43px purple;
+}
+.spots > div > h2 {
+  color: yellow;
+  font-weight: bolder;
+  position: relative;
+  text-align: center;
+  top: 130px;
+  text-transform: capitalize;
+}
+h2 {
+  text-align: center;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.products {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  justify-content: space-between;
+  padding: 40px;
+}
+.products figcaption {
+  display: flex;
+  font-size: 20px;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+.products figcaption > :first-child {
+  flex-grow: 1;
+  margin-left: 40px;
+}
+.products img {
+  width: 100%;
+}
+footer {
+  background: linear-gradient(white, grey);
+}
+.site-footer > div {
+  display: flex;
+  flex-direction: column;
+}
+.iconBar i {
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.iconBar div {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  flex-grow: 1;
+}
+.iconBar h4 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.informationBar h4 {
+  font-size: large;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+.informationBar ul {
+  flex-direction: colum;
+  list-style: none;
+
+  width: 200px;
+}
+.informationBar li {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.informationBar a {
+  text-decoration: none;
+  padding-top: 30px;
+  color: black;
+  text-transform: capitalize;
+}
+.informationBar a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+}
+.copyright:before {
+  content: "\00a9";
+}
+
+@media (min-width: 576px) {
+  .site-header > div {
+    flex-direction: row;
+  }
+  .site-header > div > :nth-child(2) {
+    flex-grow: 1;
+    width: 300px;
+    align-items: center;
+    padding: 15px;
+    margin-top: 30px;
+
+    font-size: 1em;
+  }
+  .site-header form {
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 8px;
+    background-color: white;
+    width: 60%;
+  }
+  .site-header .iconBox {
+    justify-content: space-evenly;
+    font-size: 40px;
+
+    gap: 50px;
+    padding: 20px;
+  }
+
+  .site-header .iconBox a {
+    font-size: 40px;
+    color: black;
+  }
+  .site-header ul {
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 50px;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  .site-header > nav a {
+    font-size: 20px;
+  }
+  .hero {
+    flex-direction: row;
+    margin-right: 10px;
+  }
+
+  .hero p {
+    padding: 60px;
+  }
+  .btn {
+    padding: 15px;
+    font-size: 20px;
+    width: 140px;
+    align-items: center;
+    margin: auto;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+  }
+  .spots {
+    display: flex;
+  }
+  .products {
+    grid-template-columns: auto auto auto auto;
+    row-gap: 60px;
+  }
+  .site-footer > div {
+    flex-direction: row;
+  }
+}
